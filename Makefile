@@ -61,14 +61,12 @@ install: clean all
 	sudo cp $(binary) $(install_dir)
 
 tests: compiler := gcc $(test_flags)
-tests: clean all run
+tests: all
+	gcc -Isrc tests/test.c -o bin/tests tests/eenheid/*.c
+	bin/tests
 
 release: 
 	compiler = gcc $(release_flags)
 
 remove:
 	sudo rm $(install_dir)/$(program)
-
-test: all
-	gcc -Isrc/spoor -Isrc/redbas tests/test.c -o bin/test obj/redbas/redbas.o -leenheid -DEENHEID_UNIT_TESTS
-	./bin/test

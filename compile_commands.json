@@ -11,9 +11,9 @@
       "obj/main.o",
       "src/main.c"
     ],
-    "directory": "/home/mb/ws/c/red",
-    "file": "/home/mb/ws/c/red/src/main.c",
-    "output": "/home/mb/ws/c/red/obj/main.o"
+    "directory": "/home/mb/red",
+    "file": "/home/mb/red/src/main.c",
+    "output": "/home/mb/red/obj/main.o"
   },
   {
     "arguments": [
@@ -27,8 +27,34 @@
       "obj/red/r_file.o",
       "src/red/r_file.c"
     ],
-    "directory": "/home/mb/ws/c/red",
-    "file": "/home/mb/ws/c/red/src/red/r_file.c",
-    "output": "/home/mb/ws/c/red/obj/red/r_file.o"
+    "directory": "/home/mb/red",
+    "file": "/home/mb/red/src/red/r_file.c",
+    "output": "/home/mb/red/obj/red/r_file.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Isrc",
+      "-o",
+      "bin/tests",
+      "tests/test.c"
+    ],
+    "directory": "/home/mb/red",
+    "file": "/home/mb/red/tests/test.c",
+    "output": "/home/mb/red/bin/tests"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Isrc",
+      "-o",
+      "bin/tests",
+      "tests/eenheid/e_test.c"
+    ],
+    "directory": "/home/mb/red",
+    "file": "/home/mb/red/tests/eenheid/e_test.c",
+    "output": "/home/mb/red/bin/tests"
   }
 ]
